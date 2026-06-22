@@ -14,13 +14,23 @@ font-family:Arial, sans-serif;
 }
 
 body{
-background:#0f0f0f;
+background:#0b0b0b;
 color:white;
-line-height:1.6;
 }
 
 header{
-height:100vh;
+padding:30px 20px;
+text-align:center;
+}
+
+.logo{
+width:180px;
+max-width:80%;
+margin-bottom:20px;
+}
+
+.hero{
+min-height:90vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -29,78 +39,109 @@ text-align:center;
 padding:20px;
 }
 
-.logo{
-font-size:4rem;
-font-weight:bold;
-letter-spacing:8px;
+.hero h1{
+font-size:3rem;
+letter-spacing:4px;
+margin-bottom:15px;
 }
 
 .tagline{
 color:#d4af37;
-margin-top:10px;
-font-size:1.2rem;
+font-size:1.3rem;
+margin-bottom:25px;
 }
 
-.hero-text{
+.hero p{
 max-width:700px;
-margin-top:25px;
+line-height:1.8;
 font-size:1.1rem;
+margin-bottom:30px;
 }
 
 .btn{
 display:inline-block;
-margin-top:30px;
 padding:15px 35px;
 background:#d4af37;
 color:black;
 text-decoration:none;
 font-weight:bold;
-border-radius:30px;
+border-radius:50px;
+transition:0.3s;
 }
 
-section{
+.btn:hover{
+transform:scale(1.05);
+}
+
+.section{
 padding:80px 20px;
-max-width:1000px;
-margin:auto;
+text-align:center;
 }
 
-h2{
-text-align:center;
-margin-bottom:30px;
+.section h2{
+font-size:2rem;
+margin-bottom:20px;
 color:#d4af37;
 }
 
-.card{
-background:#181818;
-padding:30px;
-border-radius:15px;
-margin-top:20px;
+.section p{
+max-width:800px;
+margin:auto;
+line-height:1.8;
+font-size:1.05rem;
 }
 
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+.drop-card{
 margin-top:30px;
+padding:30px;
+border:1px solid #333;
+border-radius:15px;
+max-width:500px;
+margin-left:auto;
+margin-right:auto;
+background:#111;
 }
 
-.feature{
-background:#181818;
-padding:20px;
-border-radius:15px;
-text-align:center;
+.instagram-btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 30px;
+border:1px solid #d4af37;
+color:#d4af37;
+text-decoration:none;
+border-radius:50px;
 }
 
 footer{
+padding:40px 20px;
 text-align:center;
-padding:40px;
-background:#080808;
-margin-top:40px;
+background:#050505;
+margin-top:50px;
 }
 
-a{
-color:#d4af37;
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
 text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 15px rgba(0,0,0,0.4);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.2rem;
+}
+
+.tagline{
+font-size:1.1rem;
+}
+
 }
 </style>
 </head>
@@ -108,10 +149,17 @@ text-decoration:none;
 <body>
 
 <header>
-<div class="logo">ZEVRA</div>
-<div class="tagline">Redefining Everyday Style</div>
+<img src="logo.jpeg" class="logo">
+</header>
 
-<p class="hero-text">
+<section class="hero">
+<h1>ZEVRA</h1>
+
+<div class="tagline">
+Redefining Everyday Style
+</div>
+
+<p>
 Premium men's wear designed for confidence,
 comfort and timeless everyday style.
 Serving customers across Tamil Nadu.
@@ -121,67 +169,54 @@ Serving customers across Tamil Nadu.
 href="https://wa.me/919791239890?text=Hi%20ZEVRA,%20I'm%20interested%20in%20your%20collection.%20Please%20share%20more%20details.">
 Shop Via WhatsApp
 </a>
-</header>
+</section>
 
-<section>
+<section class="section">
 <h2>About ZEVRA</h2>
 
-<div class="card">
-ZEVRA was created with a simple mission —
-to redefine everyday fashion for modern men.
-We focus on premium quality, clean aesthetics,
-and comfortable fits that elevate everyday style.
-</div>
+<p>
+ZEVRA is built for men who value clean style,
+premium comfort and everyday confidence.
+Our goal is simple — create timeless essentials
+that look premium and feel exceptional.
+</p>
 </section>
 
-<section>
-<h2>ORIGIN 01</h2>
+<section class="section">
+<h2>FIRST DROP</h2>
 
-<div class="features">
+<div class="drop-card">
+<h3>ORIGIN 01</h3>
 
-<div class="feature">
-<h3>Premium Fabric</h3>
-<p>Soft, durable and comfortable.</p>
-</div>
-
-<div class="feature">
-<h3>Modern Fit</h3>
-<p>Designed for today's generation.</p>
-</div>
-
-<div class="feature">
-<h3>Everyday Comfort</h3>
-<p>Built for daily wear.</p>
-</div>
-
-<div class="feature">
-<h3>Limited Launch</h3>
-<p>Exclusive first drop collection.</p>
-</div>
-
-</div>
-</section>
-
-<section>
-<h2>Contact</h2>
-
-<div class="card">
-<p><b>Location:</b> All Over Tamil Nadu</p>
 <br>
-<p><b>Instagram:</b>
-<a href="https://instagram.com/zevra_wear">
+
+<p>
+The beginning of the ZEVRA journey.
+Premium oversized essentials designed for
+modern everyday wear.
+Launching Soon.
+</p>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Follow Our Journey</h2>
+
+<a class="instagram-btn"
+href="https://instagram.com/zevra_wear">
 @zevra_wear
 </a>
-</p>
-<br>
-<p><b>WhatsApp:</b> +91 97912 39890</p>
-</div>
-
 </section>
 
 <footer>
-© 2026 ZEVRA. All Rights Reserved.
+<p>© 2026 ZEVRA. All Rights Reserved.</p>
 </footer>
+
+<a class="whatsapp"
+href="https://wa.me/919791239890">
+WhatsApp
+</a>
 
 </body>
 </html>
